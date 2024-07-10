@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.sberTest.alex1.Alex1ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-10T17:09:48" hostname="LAPTOP-7EEI9VKF" time="0.721">
+  <properties/>
+  <testcase name="contextLoads()" classname="ru.sberTest.alex1.Alex1ApplicationTests" time="0.721"/>
+  <system-out><![CDATA[20:09:41.640 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [ru.sberTest.alex1.Alex1ApplicationTests]: Alex1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:09:41.855 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration ru.sberTest.alex1.Alex1Application for test class ru.sberTest.alex1.Alex1ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-07-10T20:09:42.595+03:00  INFO 17052 --- [    Test worker] r.sberTest.alex1.Alex1ApplicationTests   : Starting Alex1ApplicationTests using Java 17.0.7 with PID 17052 (started by adobr in C:\Java\IdeaProjects\alex1\alex1)
+2024-07-10T20:09:42.597+03:00  INFO 17052 --- [    Test worker] r.sberTest.alex1.Alex1ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-07-10T20:09:43.575+03:00  INFO 17052 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10T20:09:43.650+03:00  INFO 17052 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2024-07-10T20:09:44.364+03:00  INFO 17052 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-10T20:09:44.684+03:00  INFO 17052 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fd1ca686-9632-4f5a-a9a9-7078209bcfad user=SA
+2024-07-10T20:09:44.688+03:00  INFO 17052 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-10T20:09:44.745+03:00  INFO 17052 --- [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:fd1ca686-9632-4f5a-a9a9-7078209bcfad (H2 2.2)
+2024-07-10T20:09:44.762+03:00  WARN 17052 --- [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024-07-10T20:09:44.781+03:00  INFO 17052 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2024-07-10T20:09:44.784+03:00  INFO 17052 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.007s)
+2024-07-10T20:09:44.784+03:00  WARN 17052 --- [    Test worker] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2024-07-10T20:09:44.794+03:00  INFO 17052 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2024-07-10T20:09:44.838+03:00  INFO 17052 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2024-07-10T20:09:44.847+03:00  INFO 17052 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2024-07-10T20:09:45.011+03:00  INFO 17052 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10T20:09:45.140+03:00  INFO 17052 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10T20:09:45.233+03:00  INFO 17052 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-10T20:09:45.676+03:00  INFO 17052 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10T20:09:46.839+03:00  INFO 17052 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10T20:09:46.843+03:00  INFO 17052 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10T20:09:47.311+03:00  WARN 17052 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10T20:09:47.372+03:00  INFO 17052 --- [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-10T20:09:48.310+03:00  INFO 17052 --- [    Test worker] r.sberTest.alex1.Alex1ApplicationTests   : Started Alex1ApplicationTests in 6.17 seconds (process running for 8.132)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
